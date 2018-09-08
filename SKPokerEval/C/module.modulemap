@@ -1,0 +1,6 @@
+module CSKPokerEval [system] {
+  header "MakeHand.h"
+  header "ScoreHand.h"
+  header "ScoreHands.h"
+  export *
+}

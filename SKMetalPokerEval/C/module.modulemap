@@ -1,0 +1,4 @@
+module CSKPokerEvalCopyLookupTables [system] {
+  header "CopyLookupTables.h"
+  export *
+}

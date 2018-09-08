@@ -1,0 +1,5 @@
+module BTPokerEvalC [system] {
+  header "ScoreHand.h"
+  header "ScoreHands.h"
+  export *
+}

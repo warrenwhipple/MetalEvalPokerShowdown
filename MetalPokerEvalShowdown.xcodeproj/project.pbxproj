@@ -6,8 +6,43 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		2DC57939214414730097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DE1331C2140088300064D70;
+			remoteInfo = BTPokerEval;
+		};
+		2DC5793F214414870097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DE132C5213FF80200064D70;
+			remoteInfo = SKPokerEval;
+		};
+		2DC57945214414900097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DEA3A9B21404D46005BA510;
+			remoteInfo = BTMetalPokerEval;
+		};
+		2DC5794B214414980097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DEA3AC221413B7D005BA510;
+			remoteInfo = SKMetalPokerEval;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2DC57930214411D20097A7C4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BTPokerEval.xcodeproj; path = BTPokerEval/BTPokerEval.xcodeproj; sourceTree = "<group>"; };
+		2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKPokerEval.xcodeproj; path = SKPokerEval/SKPokerEval.xcodeproj; sourceTree = "<group>"; };
+		2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BTMetalPokerEval.xcodeproj; path = BTMetalPokerEval/BTMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
+		2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKMetalPokerEval.xcodeproj; path = SKMetalPokerEval/SKMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -15,7 +50,43 @@
 			isa = PBXGroup;
 			children = (
 				2DC57930214411D20097A7C4 /* .gitignore */,
+				2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */,
+				2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */,
+				2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */,
+				2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		2DC57936214414730097A7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC5793A214414730097A7C4 /* BTPokerEval.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DC5793C214414870097A7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC57940214414870097A7C4 /* SKPokerEval.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DC57942214414900097A7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC57946214414900097A7C4 /* BTMetalPokerEval.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DC57948214414980097A7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC5794C214414980097A7C4 /* SKMetalPokerEval.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -35,11 +106,60 @@
 			);
 			mainGroup = 2DC579252144116C0097A7C4;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2DC57942214414900097A7C4 /* Products */;
+					ProjectRef = 2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */;
+				},
+				{
+					ProductGroup = 2DC57936214414730097A7C4 /* Products */;
+					ProjectRef = 2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */;
+				},
+				{
+					ProductGroup = 2DC57948214414980097A7C4 /* Products */;
+					ProjectRef = 2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */;
+				},
+				{
+					ProductGroup = 2DC5793C214414870097A7C4 /* Products */;
+					ProjectRef = 2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2DC5793A214414730097A7C4 /* BTPokerEval.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BTPokerEval.framework;
+			remoteRef = 2DC57939214414730097A7C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DC57940214414870097A7C4 /* SKPokerEval.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SKPokerEval.framework;
+			remoteRef = 2DC5793F214414870097A7C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DC57946214414900097A7C4 /* BTMetalPokerEval.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BTMetalPokerEval.framework;
+			remoteRef = 2DC57945214414900097A7C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DC5794C214414980097A7C4 /* SKMetalPokerEval.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SKMetalPokerEval.framework;
+			remoteRef = 2DC5794B214414980097A7C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		2DC5792A2144116C0097A7C4 /* Debug */ = {
