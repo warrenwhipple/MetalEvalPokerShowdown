@@ -6,6 +6,24 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2DC57967214417E30097A7C4 /* AllCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57960214417E20097A7C4 /* AllCards.swift */; };
+		2DC57968214417E30097A7C4 /* AllHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57961214417E20097A7C4 /* AllHands.swift */; };
+		2DC57969214417E30097A7C4 /* ConvertHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57962214417E20097A7C4 /* ConvertHands.swift */; };
+		2DC5796A214417E30097A7C4 /* CountHandRanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57963214417E20097A7C4 /* CountHandRanks.swift */; };
+		2DC5796B214417E30097A7C4 /* BitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57964214417E20097A7C4 /* BitUtilities.swift */; };
+		2DC5796C214417E30097A7C4 /* RandomHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57965214417E30097A7C4 /* RandomHands.swift */; };
+		2DC5796D214417E30097A7C4 /* IsValidHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57966214417E30097A7C4 /* IsValidHand.swift */; };
+		2DC57976214418160097A7C4 /* BTvSKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5796E214418150097A7C4 /* BTvSKTests.swift */; };
+		2DC57978214418160097A7C4 /* BTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57970214418150097A7C4 /* BTTests.swift */; };
+		2DC5797C214418160097A7C4 /* SKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57974214418160097A7C4 /* SKTests.swift */; };
+		2DC5797D214418160097A7C4 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC57975214418160097A7C4 /* TestConstants.swift */; };
+		2DC57993214419430097A7C4 /* BTMetalPokerEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC57946214414900097A7C4 /* BTMetalPokerEval.framework */; };
+		2DC57994214419430097A7C4 /* BTPokerEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5793A214414730097A7C4 /* BTPokerEval.framework */; };
+		2DC57995214419430097A7C4 /* SKMetalPokerEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5794C214414980097A7C4 /* SKMetalPokerEval.framework */; };
+		2DC57996214419430097A7C4 /* SKPokerEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC57940214414870097A7C4 /* SKPokerEval.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2DC57939214414730097A7C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,6 +53,34 @@
 			remoteGlobalIDString = 2DEA3AC221413B7D005BA510;
 			remoteInfo = SKMetalPokerEval;
 		};
+		2DC5797E214418600097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE1331B2140088300064D70;
+			remoteInfo = BTPokerEval;
+		};
+		2DC57980214418600097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE132C4213FF80200064D70;
+			remoteInfo = SKPokerEval;
+		};
+		2DC57982214418600097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DEA3A9A21404D46005BA510;
+			remoteInfo = BTMetalPokerEval;
+		};
+		2DC57984214418600097A7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DEA3AC121413B7D005BA510;
+			remoteInfo = SKMetalPokerEval;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +89,52 @@
 		2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKPokerEval.xcodeproj; path = SKPokerEval/SKPokerEval.xcodeproj; sourceTree = "<group>"; };
 		2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BTMetalPokerEval.xcodeproj; path = BTMetalPokerEval/BTMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
 		2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKMetalPokerEval.xcodeproj; path = SKMetalPokerEval/SKMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
+		2DC57955214415C60097A7C4 /* Showdown_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Showdown_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC5795A214415C60097A7C4 /* Info_macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_macOS.plist; sourceTree = "<group>"; };
+		2DC57960214417E20097A7C4 /* AllCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCards.swift; sourceTree = "<group>"; };
+		2DC57961214417E20097A7C4 /* AllHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllHands.swift; sourceTree = "<group>"; };
+		2DC57962214417E20097A7C4 /* ConvertHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertHands.swift; sourceTree = "<group>"; };
+		2DC57963214417E20097A7C4 /* CountHandRanks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountHandRanks.swift; sourceTree = "<group>"; };
+		2DC57964214417E20097A7C4 /* BitUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitUtilities.swift; sourceTree = "<group>"; };
+		2DC57965214417E30097A7C4 /* RandomHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomHands.swift; sourceTree = "<group>"; };
+		2DC57966214417E30097A7C4 /* IsValidHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsValidHand.swift; sourceTree = "<group>"; };
+		2DC5796E214418150097A7C4 /* BTvSKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTvSKTests.swift; sourceTree = "<group>"; };
+		2DC5796F214418150097A7C4 /* BenchmarkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkTests.swift; sourceTree = "<group>"; };
+		2DC57970214418150097A7C4 /* BTTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTTests.swift; sourceTree = "<group>"; };
+		2DC57971214418160097A7C4 /* BTMetalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTMetalTests.swift; sourceTree = "<group>"; };
+		2DC57972214418160097A7C4 /* BTMetalvSKMetalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTMetalvSKMetalTests.swift; sourceTree = "<group>"; };
+		2DC57973214418160097A7C4 /* SKMetalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMetalTests.swift; sourceTree = "<group>"; };
+		2DC57974214418160097A7C4 /* SKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTests.swift; sourceTree = "<group>"; };
+		2DC57975214418160097A7C4 /* TestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DC57952214415C60097A7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC57993214419430097A7C4 /* BTMetalPokerEval.framework in Frameworks */,
+				2DC57994214419430097A7C4 /* BTPokerEval.framework in Frameworks */,
+				2DC57995214419430097A7C4 /* SKMetalPokerEval.framework in Frameworks */,
+				2DC57996214419430097A7C4 /* SKPokerEval.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2DC579252144116C0097A7C4 = {
 			isa = PBXGroup;
 			children = (
 				2DC57930214411D20097A7C4 /* .gitignore */,
+				2DC5795F214417650097A7C4 /* Utilities */,
+				2DC5795E214415CA0097A7C4 /* Tests */,
 				2DC57935214414730097A7C4 /* BTPokerEval.xcodeproj */,
 				2DC5793B214414870097A7C4 /* SKPokerEval.xcodeproj */,
 				2DC57941214414900097A7C4 /* BTMetalPokerEval.xcodeproj */,
 				2DC57947214414980097A7C4 /* SKMetalPokerEval.xcodeproj */,
+				2DC57956214415C60097A7C4 /* Products */,
+				2DC57992214419430097A7C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,13 +170,89 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2DC57956214415C60097A7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DC57955214415C60097A7C4 /* Showdown_macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DC5795E214415CA0097A7C4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2DC57975214418160097A7C4 /* TestConstants.swift */,
+				2DC57970214418150097A7C4 /* BTTests.swift */,
+				2DC57974214418160097A7C4 /* SKTests.swift */,
+				2DC5796E214418150097A7C4 /* BTvSKTests.swift */,
+				2DC57971214418160097A7C4 /* BTMetalTests.swift */,
+				2DC57973214418160097A7C4 /* SKMetalTests.swift */,
+				2DC57972214418160097A7C4 /* BTMetalvSKMetalTests.swift */,
+				2DC5796F214418150097A7C4 /* BenchmarkTests.swift */,
+				2DC5795A214415C60097A7C4 /* Info_macOS.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2DC5795F214417650097A7C4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DC57960214417E20097A7C4 /* AllCards.swift */,
+				2DC57961214417E20097A7C4 /* AllHands.swift */,
+				2DC57964214417E20097A7C4 /* BitUtilities.swift */,
+				2DC57962214417E20097A7C4 /* ConvertHands.swift */,
+				2DC57963214417E20097A7C4 /* CountHandRanks.swift */,
+				2DC57966214417E30097A7C4 /* IsValidHand.swift */,
+				2DC57965214417E30097A7C4 /* RandomHands.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2DC57992214419430097A7C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DC57954214415C60097A7C4 /* Showdown_macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DC5795B214415C60097A7C4 /* Build configuration list for PBXNativeTarget "Showdown_macOSTests" */;
+			buildPhases = (
+				2DC57951214415C60097A7C4 /* Sources */,
+				2DC57952214415C60097A7C4 /* Frameworks */,
+				2DC57953214415C60097A7C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DC5797F214418600097A7C4 /* PBXTargetDependency */,
+				2DC57981214418600097A7C4 /* PBXTargetDependency */,
+				2DC57983214418600097A7C4 /* PBXTargetDependency */,
+				2DC57985214418600097A7C4 /* PBXTargetDependency */,
+			);
+			name = Showdown_macOSTests;
+			productName = Showdown_macOSTests;
+			productReference = 2DC57955214415C60097A7C4 /* Showdown_macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2DC579262144116C0097A7C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					2DC57954214415C60097A7C4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2DC579292144116C0097A7C4 /* Build configuration list for PBXProject "MetalPokerEvalShowdown" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -105,6 +262,7 @@
 				en,
 			);
 			mainGroup = 2DC579252144116C0097A7C4;
+			productRefGroup = 2DC57956214415C60097A7C4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -126,6 +284,7 @@
 			);
 			projectRoot = "";
 			targets = (
+				2DC57954214415C60097A7C4 /* Showdown_macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +320,60 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2DC57953214415C60097A7C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DC57951214415C60097A7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC57976214418160097A7C4 /* BTvSKTests.swift in Sources */,
+				2DC57978214418160097A7C4 /* BTTests.swift in Sources */,
+				2DC5797C214418160097A7C4 /* SKTests.swift in Sources */,
+				2DC57969214417E30097A7C4 /* ConvertHands.swift in Sources */,
+				2DC5797D214418160097A7C4 /* TestConstants.swift in Sources */,
+				2DC5796C214417E30097A7C4 /* RandomHands.swift in Sources */,
+				2DC5796B214417E30097A7C4 /* BitUtilities.swift in Sources */,
+				2DC5796D214417E30097A7C4 /* IsValidHand.swift in Sources */,
+				2DC57968214417E30097A7C4 /* AllHands.swift in Sources */,
+				2DC5796A214417E30097A7C4 /* CountHandRanks.swift in Sources */,
+				2DC57967214417E30097A7C4 /* AllCards.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DC5797F214418600097A7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTPokerEval;
+			targetProxy = 2DC5797E214418600097A7C4 /* PBXContainerItemProxy */;
+		};
+		2DC57981214418600097A7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKPokerEval;
+			targetProxy = 2DC57980214418600097A7C4 /* PBXContainerItemProxy */;
+		};
+		2DC57983214418600097A7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTMetalPokerEval;
+			targetProxy = 2DC57982214418600097A7C4 /* PBXContainerItemProxy */;
+		};
+		2DC57985214418600097A7C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKMetalPokerEval;
+			targetProxy = 2DC57984214418600097A7C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		2DC5792A2144116C0097A7C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -174,6 +387,143 @@
 			};
 			name = Release;
 		};
+		2DC5795C214415C60097A7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R4SGC2D9P8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info_macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warrenwhipple.Showdown-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2DC5795D214415C60097A7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R4SGC2D9P8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info_macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warrenwhipple.Showdown-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -182,6 +532,15 @@
 			buildConfigurations = (
 				2DC5792A2144116C0097A7C4 /* Debug */,
 				2DC5792B2144116C0097A7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DC5795B214415C60097A7C4 /* Build configuration list for PBXNativeTarget "Showdown_macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DC5795C214415C60097A7C4 /* Debug */,
+				2DC5795D214415C60097A7C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
