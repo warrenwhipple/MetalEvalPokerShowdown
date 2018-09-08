@@ -4,17 +4,10 @@ import SKPokerEval
 import BTMetalPokerEval
 import SKMetalPokerEval
 
-
-private let btHands = randomBTHands(count: 1_000_000)
+private let btHands = randomBTHands(count: sampleSize)
 private let skHands = convertToSKHands(btHands: btHands)
 
 class BenchmarkTests: XCTestCase {
-  
-  func testPerformanceRandomBTHands() {
-    measure {
-      let _ = randomBTHands(count: 1_000_000)
-    }
-  }
   
   func testPerformanceBTPokerEvalPointer() {
     let scoreBuffer = UnsafeMutableBufferPointer<UInt32>
