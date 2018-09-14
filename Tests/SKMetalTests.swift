@@ -4,7 +4,7 @@ import SKPokerEval
 
 class SKMetalTests: XCTestCase {
     
-  var evaluator: Evaluator!
+  var evaluator: Evaluator?
   
   override func setUp() {
     super.setUp()
@@ -21,12 +21,20 @@ class SKMetalTests: XCTestCase {
   }
   
   func testCanScore() {
+    guard let evaluator = evaluator else {
+      XCTFail()
+      return
+    }
     let hands: [Hand] = randomSKHands(count: 1)
     let scores = evaluator.score(hands: hands)
     XCTAssertFalse(scores.isEmpty)
   }
   
   func testCvMetalScoreMatch() {
+    guard let evaluator = evaluator else {
+      XCTFail()
+      return
+    }
     let hands = randomSKHands(count: sampleSize)
     let cScores = SKPokerEval.score(hands: hands)
     let metalScores = evaluator.score(hands: hands)

@@ -4,9 +4,9 @@ import SKMetalPokerEval
 
 class BTMetalvSKMetalTests: XCTestCase {
   
-  var btEvaluator: BTMetalPokerEval.Evaluator!
-  var skEvaluator: SKMetalPokerEval.Evaluator!
-
+  var btEvaluator: BTMetalPokerEval.Evaluator?
+  var skEvaluator: SKMetalPokerEval.Evaluator?
+  
   override func setUp() {
     super.setUp()
     btEvaluator = BTMetalPokerEval.Evaluator()
@@ -20,6 +20,10 @@ class BTMetalvSKMetalTests: XCTestCase {
   }
   
   func testBTvSKRelativeScores() {
+    guard let btEvaluator = btEvaluator, let skEvaluator = skEvaluator else {
+      XCTFail()
+      return
+    }
     let aBTHands = randomBTHands(count: sampleSize)
     let bBTHands = randomBTHands(count: sampleSize)
     let aSKHands = convertToSKHands(btHands: aBTHands)

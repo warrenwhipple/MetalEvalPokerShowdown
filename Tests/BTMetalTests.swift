@@ -4,7 +4,7 @@ import BTPokerEval
 
 class BTMetalTests: XCTestCase {
   
-  var evaluator: Evaluator!
+  var evaluator: Evaluator?
 
   override func setUp() {
     super.setUp()
@@ -21,12 +21,20 @@ class BTMetalTests: XCTestCase {
   }
   
   func test5CardHandRankCounts() {
+    guard let evaluator = evaluator else {
+      XCTFail()
+      return
+    }
     let scores = evaluator.score(hands: allBT5CardHands)
     let rankCounts = countBTHandRanks(scores: scores)
     XCTAssertEqual(rankCounts, correct5CardRankCounts)
   }
   
   func testCvMetalScoreMatch() {
+    guard let evaluator = evaluator else {
+      XCTFail()
+      return
+    }
     let hands = randomBTHands(count: sampleSize)
     let cScores = BTPokerEval.score(hands: hands)
     let metalScores = evaluator.score(hands: hands)

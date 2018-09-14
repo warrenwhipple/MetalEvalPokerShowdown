@@ -34,7 +34,10 @@ class BenchmarkTests: XCTestCase {
   }
   
   func testPerformanceBTMetalPokerEval() {
-    let evaluator = BTMetalPokerEval.Evaluator()!
+    guard let evaluator = BTMetalPokerEval.Evaluator() else {
+      XCTFail()
+      return
+    }
     let handBuffer = evaluator.makeHandBuffer(hands: btHands)!
     let scoreBuffer = evaluator.makeScoreBuffer(count: btHands.count)!
     self.measure {
@@ -48,7 +51,10 @@ class BenchmarkTests: XCTestCase {
   }
   
   func testPerformanceSKMetalPokerEval() {
-    let evaluator = SKMetalPokerEval.Evaluator()!
+    guard let evaluator = SKMetalPokerEval.Evaluator() else {
+      XCTFail()
+      return
+    }
     let handBuffer = evaluator.makeHandBuffer(hands: skHands)!
     let scoreBuffer = evaluator.makeScoreBuffer(count: skHands.count)!
     self.measure {
