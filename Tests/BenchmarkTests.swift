@@ -35,12 +35,12 @@ class BenchmarkTests: XCTestCase {
   
   func testPerformanceBTMetalPokerEval() {
     let evaluator = BTMetalPokerEval.Evaluator()!
-    let handBuffer = evaluator.makeHandsBuffer(hands: btHands)!
+    let handBuffer = evaluator.makeHandBuffer(hands: btHands)!
     let scoreBuffer = evaluator.makeScoreBuffer(count: btHands.count)!
     self.measure {
       let commandBuffer = evaluator.dispatchScoreCommand(
-        handsBuffer: handBuffer,
-        scoresBuffer: scoreBuffer,
+        handBuffer: handBuffer,
+        scoreBuffer: scoreBuffer,
         count: btHands.count
       )!
       commandBuffer.waitUntilCompleted()
@@ -49,12 +49,12 @@ class BenchmarkTests: XCTestCase {
   
   func testPerformanceSKMetalPokerEval() {
     let evaluator = SKMetalPokerEval.Evaluator()!
-    let handBuffer = evaluator.makeHandsBuffer(hands: skHands)!
+    let handBuffer = evaluator.makeHandBuffer(hands: skHands)!
     let scoreBuffer = evaluator.makeScoreBuffer(count: skHands.count)!
     self.measure {
       let commandBuffer = evaluator.dispatchScoreCommand(
-        handsBuffer: handBuffer,
-        scoresBuffer: scoreBuffer,
+        handBuffer: handBuffer,
+        scoreBuffer: scoreBuffer,
         count: skHands.count
         )!
       commandBuffer.waitUntilCompleted()

@@ -40,8 +40,8 @@ public class Evaluator {
   }
   
   public func dispatchScoreCommand(
-    handsBuffer: MTLBuffer,
-    scoresBuffer: MTLBuffer,
+    handBuffer: MTLBuffer,
+    scoreBuffer: MTLBuffer,
     count: Int) -> MTLCommandBuffer? {
     
     // Initialize one-off command queue and encoder
@@ -58,8 +58,8 @@ public class Evaluator {
     commandEncoder.setComputePipelineState(pipeline)
     
     // Set buffer pointers
-    commandEncoder.setBuffer(handsBuffer, offset: 0, index: 0)
-    commandEncoder.setBuffer(scoresBuffer, offset: 0, index: 1)
+    commandEncoder.setBuffer(handBuffer, offset: 0, index: 0)
+    commandEncoder.setBuffer(scoreBuffer, offset: 0, index: 1)
     
     // Set variables
     var threadCount = CUnsignedInt(count)
@@ -95,7 +95,7 @@ public class Evaluator {
     return commandBuffer
   }
   
-  public func makeHandsBuffer(hands: [Hand]) -> MTLBuffer? {
+  public func makeHandBuffer(hands: [Hand]) -> MTLBuffer? {
     return commandQueue.device.makeBuffer(
       bytes: UnsafeRawPointer(hands),
       length: MemoryLayout<Hand>.stride * hands.count,
@@ -110,27 +110,27 @@ public class Evaluator {
     )
   }
   
-  public func makeScoresArray(scoresBuffer: MTLBuffer, count: Int) -> [Score] {
-    let scoresPointer = scoresBuffer
+  public func makeScoreArray(scoreBuffer: MTLBuffer, count: Int) -> [Score] {
+    let scorePointer = scoreBuffer
       .contents()
       .assumingMemoryBound(to: Score.self)
-    let scoresBufferPointer = UnsafeBufferPointer(
-      start: scoresPointer,
+    let scoreBufferPointer = UnsafeBufferPointer(
+      start: scorePointer,
       count: count
     )
-    return [Score](scoresBufferPointer)
+    return [Score](scoreBufferPointer)
   }
   
   public func score(hands: [Hand]) -> [Score] {
-    guard let handsBuffer = makeHandsBuffer(hands: hands) else { return [] }
-    guard let scoresBuffer = makeScoreBuffer(count: hands.count) else { return [] }
+    guard let handBuffer = makeHandBuffer(hands: hands) else { return [] }
+    guard let scoreBuffer = makeScoreBuffer(count: hands.count) else { return [] }
     guard let commandBuffer = dispatchScoreCommand(
-      handsBuffer: handsBuffer,
-      scoresBuffer: scoresBuffer,
+      handBuffer: handBuffer,
+      scoreBuffer: scoreBuffer,
       count: hands.count
       ) else { return [] }
     commandBuffer.waitUntilCompleted()
-    let scores = makeScoresArray(scoresBuffer: scoresBuffer, count: hands.count)
+    let scores = makeScoreArray(scoreBuffer: scoreBuffer, count: hands.count)
     return scores
   }
   
