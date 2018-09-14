@@ -189,6 +189,8 @@
 		2DC579EE214420340097A7C4 /* SKPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKPokerEval.xcodeproj; path = SKPokerEval/SKPokerEval.xcodeproj; sourceTree = "<group>"; };
 		2DC579F4214420400097A7C4 /* BTMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BTMetalPokerEval.xcodeproj; path = BTMetalPokerEval/BTMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
 		2DC579FA2144205A0097A7C4 /* SKMetalPokerEval.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SKMetalPokerEval.xcodeproj; path = SKMetalPokerEval/SKMetalPokerEval.xcodeproj; sourceTree = "<group>"; };
+		2DECB2A1214C382100A47293 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DECB2A2214C383900A47293 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				2DC57930214411D20097A7C4 /* .gitignore */,
+				2DECB2A1214C382100A47293 /* README.md */,
+				2DECB2A2214C383900A47293 /* LICENSE */,
 				2DC5795F214417650097A7C4 /* Utilities */,
 				2DC5795E214415CA0097A7C4 /* Tests */,
 				2DC5799C21441AC30097A7C4 /* EmptyApp_iOS */,
