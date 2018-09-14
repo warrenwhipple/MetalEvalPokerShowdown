@@ -10,7 +10,6 @@
 		2DE133202140088300064D70 /* BTPokerEval.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE1331E2140088300064D70 /* BTPokerEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DE13324214008FA00064D70 /* ScoreHand.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CA07F213F1B79004DFEFE /* ScoreHand.c */; };
 		2DE13325214008FA00064D70 /* ScoreHands.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CA080213F1B7A004DFEFE /* ScoreHands.c */; };
-		2DE13326214008FA00064D70 /* MSB.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CA081213F1B7A004DFEFE /* MSB.c */; };
 		2DE1333021400A5500064D70 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5CA0C6213F215D004DFEFE /* Score.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +19,6 @@
 		2D5CA07E213F1B79004DFEFE /* ScoreHands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreHands.h; sourceTree = "<group>"; };
 		2D5CA07F213F1B79004DFEFE /* ScoreHand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ScoreHand.c; sourceTree = "<group>"; };
 		2D5CA080213F1B7A004DFEFE /* ScoreHands.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ScoreHands.c; sourceTree = "<group>"; };
-		2D5CA081213F1B7A004DFEFE /* MSB.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MSB.c; sourceTree = "<group>"; };
 		2D5CA082213F1C27004DFEFE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		2D5CA0C6213F215D004DFEFE /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		2DE1331C2140088300064D70 /* BTPokerEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTPokerEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +54,6 @@
 				2D5CA07D213F1B79004DFEFE /* ScoreHand.h */,
 				2D5CA080213F1B7A004DFEFE /* ScoreHands.c */,
 				2D5CA07E213F1B79004DFEFE /* ScoreHands.h */,
-				2D5CA081213F1B7A004DFEFE /* MSB.c */,
 				2D5CA07C213F1B79004DFEFE /* MSB.h */,
 			);
 			path = C;
@@ -158,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE13326214008FA00064D70 /* MSB.c in Sources */,
 				2DE13324214008FA00064D70 /* ScoreHand.c in Sources */,
 				2DE1333021400A5500064D70 /* Score.swift in Sources */,
 				2DE13325214008FA00064D70 /* ScoreHands.c in Sources */,

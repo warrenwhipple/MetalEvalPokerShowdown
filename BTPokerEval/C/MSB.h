@@ -3,16 +3,41 @@
 
 #include <stdint.h>
 
-// Most significant bit max 16 bits
-uint64_t msb(uint64_t x);
+// Most significant bit
+static inline uint64_t msb(uint64_t x) {
+  return 0x8000000000000000 >> __builtin_clzll(x);
+}
 
-// Most significant 2 bits (max 16 bits)
-uint64_t ms2b(uint64_t x);
+// Most significant 2 bits
+static inline uint64_t ms2b(uint64_t x) {
+  uint64_t y = msb(x);
+  x &= ~y;
+  y |= msb(x);
+  return y;
+}
 
-// Most significant 3 bits (max 16 bits)
-uint64_t ms3b(uint64_t x);
+// Most significant 3 bits
+static inline uint64_t ms3b(uint64_t x) {
+  uint64_t y = msb(x);
+  x &= ~y;
+  y |= msb(x);
+  x &= ~y;
+  y |= msb(x);
+  return y;
+}
 
-// Most significant 5 bits (max 16 bits)
-uint64_t ms5b(uint64_t x);
+// Most significant 5 bits
+static inline uint64_t ms5b(uint64_t x) {
+  uint64_t y = msb(x);
+  x &= ~y;
+  y |= msb(x);
+  x &= ~y;
+  y |= msb(x);
+  x &= ~y;
+  y |= msb(x);
+  x &= ~y;
+  y |= msb(x);
+  return y;
+}
 
 #endif
