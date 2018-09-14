@@ -141,6 +141,34 @@
 			remoteGlobalIDString = 2DEA3AC121413B7D005BA510;
 			remoteInfo = SKMetalPokerEval;
 		};
+		2DECB2A3214C3E6000A47293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC579E721441FD50097A7C4 /* BTPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE1331B2140088300064D70;
+			remoteInfo = BTPokerEval;
+		};
+		2DECB2A5214C3E6000A47293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC579EE214420340097A7C4 /* SKPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE132C4213FF80200064D70;
+			remoteInfo = SKPokerEval;
+		};
+		2DECB2A7214C3E6000A47293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC579F4214420400097A7C4 /* BTMetalPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DEA3A9A21404D46005BA510;
+			remoteInfo = BTMetalPokerEval;
+		};
+		2DECB2A9214C3E6000A47293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DC579FA2144205A0097A7C4 /* SKMetalPokerEval.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DEA3AC121413B7D005BA510;
+			remoteInfo = SKMetalPokerEval;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -336,6 +364,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				2DECB2A4214C3E6000A47293 /* PBXTargetDependency */,
+				2DECB2A6214C3E6000A47293 /* PBXTargetDependency */,
+				2DECB2A8214C3E6000A47293 /* PBXTargetDependency */,
+				2DECB2AA214C3E6000A47293 /* PBXTargetDependency */,
 			);
 			name = Showdown_macOSTests;
 			productName = Showdown_macOSTests;
@@ -602,6 +634,26 @@
 			isa = PBXTargetDependency;
 			name = SKMetalPokerEval;
 			targetProxy = 2DC57A21214421FD0097A7C4 /* PBXContainerItemProxy */;
+		};
+		2DECB2A4214C3E6000A47293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTPokerEval;
+			targetProxy = 2DECB2A3214C3E6000A47293 /* PBXContainerItemProxy */;
+		};
+		2DECB2A6214C3E6000A47293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKPokerEval;
+			targetProxy = 2DECB2A5214C3E6000A47293 /* PBXContainerItemProxy */;
+		};
+		2DECB2A8214C3E6000A47293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTMetalPokerEval;
+			targetProxy = 2DECB2A7214C3E6000A47293 /* PBXContainerItemProxy */;
+		};
+		2DECB2AA214C3E6000A47293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKMetalPokerEval;
+			targetProxy = 2DECB2A9214C3E6000A47293 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
