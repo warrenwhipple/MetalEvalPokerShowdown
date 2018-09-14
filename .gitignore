@@ -13,6 +13,9 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+## Test generated
+xcbaselines/
+
 ## Other
 *.moved-aside
 *.xccheckout
